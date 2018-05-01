@@ -2,15 +2,57 @@
   box-sizing: border-box;
 }
 
+header {
+  height: 5em;
+  background-color: orange;
+}
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #C1B5AD;
 }
-#map {
-  height: 100vh;
-  width: 100vw;
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5em;  
+  align-items: center;
 }
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+}
+
+#map {
+  flex: 0 1 auto;
+  height: 100vh;
+}
+
+.activities {
+  position: absolute;
+  height: 30em;
+  flex: 0 1 auto;
+  z-index: 2;
+  background-color: brown;
+}
+.itinerary {
+  position: absolute;
+  height: 30em;
+  z-index: 2;
+  background-color: green;
+}
+
+
+
 
 /* #marker{
   position: absolute;
